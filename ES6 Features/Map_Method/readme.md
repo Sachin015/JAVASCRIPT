@@ -1,0 +1,1 @@
+In JavaScript, the map() method is used to create a new array populated with the results of calling a provided function on every element in the calling array. It is a part of the Array prototype and is often used for transforming data.
