@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+      //The XMLHttpRequest (XHR) object is a JavaScript API  allows you to make HTTP requests to a server and receive responses without reloading the web page.
+
+      //The constructor XMLHttpRequest() must be called before any other method calls.
+      const url = "https://api.github.com/users/hiteshchoudhary"; //API from Hitesh_Choudhary
+      let httpReq = new XMLHttpRequest();
+      httpReq.onreadystatechange = function () {
+        console.log(httpReq.readyState); //continiously tracking the states
+        if (httpReq.readyState === 4) {
+          console.log(this.responseText);//Type :- String
+        }
+      };
+      // readrState: 0 (UNSENT)
+      httpReq.open("GET", url); // readrState: 1 (OPENED)
+      httpReq.send(); //readyState : 2 (HEADERS_RECEIVED)
+    </script>
+  </body>
+</html>

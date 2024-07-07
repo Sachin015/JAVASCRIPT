@@ -1,0 +1,1 @@
+## Getter & Setter  are used to get and set the values of an object's properties. They allow for more control over how properties are accessed and modified. 
